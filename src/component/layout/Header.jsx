@@ -20,7 +20,7 @@ export default function Header() {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <div className="btn text-info border-info bg-transparet ">Connect Wallet</div>
+      <div className="btn text-info border-info bg-transparet position-absolute top-1 end-0 me-5 ">Connect Wallet</div>
         
         </div>
       </div>

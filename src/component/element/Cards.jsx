@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Cards() {
   const data = [
@@ -74,21 +75,22 @@ export default function Cards() {
       text3: "Earn",
       text4: "MRACE",
     },
-  ];
+  ]
+  const navigate =useNavigate();
   return (
     <div>
       <div className="container">
         <div className="row">
-          <div className="col-md-6 ">
+          <h1 className="fw-bold text-primary text-center my-5">Choose Your Stake Pool</h1>
             {data.map((v, i) => {
               return (
                 <>
-                  <div className="col-md-6 me-3 mb-4" key={i}>
+                  <div className="col-md-3 d-flex  mb-4" key={i}>
                     <div className={`card text-dark w-100  border-primary   `}>
                       <div className="card-body ">
                         <img
                           src={v.img}
-                          className="w-100 d-block m-auto"
+                          className="w-50 d-block m-auto"
                           alt=""
                         />
                         <h3 className="fw-bold text-primary text-center">
@@ -102,7 +104,7 @@ export default function Cards() {
                             <h5>{v.text2}</h5>
                           </div>
                         </div>
-                        <div className="row">
+                        <div className="row ">
                           <div className="col-md-6">
                             <h5 className="fw-bold text-muted">{v.text3}</h5>
                           </div>
@@ -111,16 +113,19 @@ export default function Cards() {
                           </div>
                         </div>
                         <hr />
-                        <button className="btn border-info text-info btn-lg px-5 ms-5">
+                        <div className="text-center">
+                        <button className="btn border-info text-info  w-100  " onClick={()=> navigate('/card',{state:v})}>
                           Select
                         </button>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  
                 </>
               );
             })}
-          </div>
+          
         </div>
       </div>
     </div>
