@@ -16,12 +16,12 @@ export default function Steps() {
             <div className="col-md-6">
                 <h2 className='fw-bold display-6 ms-3 text-center'>Join Our Comunity</h2>
              <div className='text-center text-muted mt-4'>
-                <TiSocialFacebookCircular size={30}/>
-                <TiSocialGithubCircular size={30}/>
-                <TiSocialLinkedinCircular size={30}/>
-                <TiSocialTwitterCircular size={30}/>
-                <TiSocialTumblerCircular size={30}/>
-                <TiSocialPinterestCircular size={30}/>
+                <TiSocialFacebookCircular size={40}/>
+                <TiSocialGithubCircular size={40}/>
+                <TiSocialLinkedinCircular size={40}/>
+                <TiSocialTwitterCircular size={40}/>
+                <TiSocialTumblerCircular size={40}/>
+                <TiSocialPinterestCircular size={40}/>
              </div>
 
             </div>
